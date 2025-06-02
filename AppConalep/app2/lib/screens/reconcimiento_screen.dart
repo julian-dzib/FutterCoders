@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:app2/services/ObjectDetectionService.dart';
+import 'package:app2/services/objectDetectionService.dart';
 import 'package:app2/components/galeria_components.dart';
 import 'package:flutter/material.dart';
 
