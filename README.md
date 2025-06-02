@@ -45,4 +45,6 @@ Este repositorio es para la materia de flutter
  Seguir los pasos que se encuentra en:    
 [📄 Documento ](docs/icono.docx)
 
+ ### Descargar la aplicación
+[Aplicación ](app/app-release.apk)
 
