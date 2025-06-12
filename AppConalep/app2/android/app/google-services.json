@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "702436046817",
+    "firebase_url": "https://desarrollocode-default-rtdb.firebaseio.com",
+    "project_id": "desarrollocode",
+    "storage_bucket": "desarrollocode.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702436046817:android:f0b1b7dbb32607e7e0c4a0",
+        "android_client_info": {
+          "package_name": "com.example.app2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxvggr5wOl3_l8jX90JiAUoP2WWt6qOqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

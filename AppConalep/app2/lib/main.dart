@@ -1,6 +1,14 @@
-import 'package:app2/screens/menu_screen.dart';
+import 'package:app2/screens/camara_screen.dart';
+import 'package:app2/screens/feyman_screen.dart';
+import 'package:app2/screens/menuLateral_screen.dart';
+import 'package:app2/screens/reconcimiento_screen.dart';
 import 'package:flutter/material.dart';
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+void main() async{
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -16,7 +24,14 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const MenuScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => MenuLateralScreen(),
+        '/camera': (context) => CamaraScreen(),
+        '/reco': (context) => ReconcimientoScreen(),
+        '/ejem': (context) => FeymanScreen(),
+        //'/settings': (context) => CamaraScreen(),
+      },
     );
   }
 }

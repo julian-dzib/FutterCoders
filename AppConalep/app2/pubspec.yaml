@@ -33,12 +33,18 @@ dependencies:
   google_nav_bar: ^5.0.7
   image_picker: ^1.0.4
   http: ^0.13.6
-
+  flutter_zoom_drawer: ^3.2.0
+  intl: ^0.18.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   flutter_launcher_icons: 0.14.3
+  easy_sidemenu: ^0.7.0
+  sidebarx: ^0.17.1
+  drawerbehavior: ^3.0.2
+  flutter_advanced_drawer: ^1.5.0
+  firebase_core: ^3.14.0
 
 dev_dependencies:
   flutter_test:
