@@ -36,7 +36,7 @@ class TextfieldWidget extends StatelessWidget {
             //Text invisinle
             hintText: 'Escribe aquí...',
             //rellenar el fondo de mi textfield
-            filled: true,
+            filled: false,
             //Establecer el color de fondo
             fillColor: Colors.white,
             //Agregar un border redondeado 
