@@ -1,3 +1,4 @@
+import 'package:app2/screens/FeymanListScree.dart';
 import 'package:app2/screens/camara_screen.dart';
 import 'package:app2/screens/feyman2_scren.dart';
 import 'package:app2/screens/feyman_screen.dart';
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
         '/camera': (context) => CamaraScreen(),
         '/reco': (context) => ReconcimientoScreen(),
         '/ejem': (context) => FeymanScreen(),
-        '/ejem2': (context) => Feyman2Screen(),
+        //'/ejem2': (context) => Feyman2Screen(),
+        '/ejem3': (context) => FeymanListScreen(),
         //'/settings': (context) => CamaraScreen(),
       },
     );

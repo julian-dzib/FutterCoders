@@ -1,5 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api, use_build_context_synchronously
 
+import 'package:app2/widgets/buttonIcon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
 
@@ -116,7 +117,7 @@ class _MenuLateralState extends State<MenuLateralScreen> {
                       leading: Icon(Icons.add),
                       title: Text("Submenu2"),
                       onTap: () {
-                        //Navigator.of(context).pushNamed('/cart');
+                        Navigator.of(context).pushNamed('/ejem3');
                       },
                     ),
                   ],

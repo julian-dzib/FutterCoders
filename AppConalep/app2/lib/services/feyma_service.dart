@@ -10,10 +10,12 @@ typedef FromMap<T> = T Function(String id, Map<String, dynamic> data);
 //La clase puede recibir cualquier modelo
 class FirestoreService<T> {
   final String collection;
+  //Definir 
   final FromMap<T> fromMap;
   final _db = FirebaseFirestore.instance;
 
-  FirestoreService({required this.collection, required this.fromMap});
+  FirestoreService({required this.collection, required this.fromMap
+  });
 
   //CRUD
   //POST
@@ -23,9 +25,22 @@ class FirestoreService<T> {
     await _db.collection(collection).add(toMap());
   }
   //GETALL
+  Future<List<T>> get() async {
+    final service= await _db.collection(collection).get();
+    //Hay que retornar mi documento de firestore para despues retornar una lista
+    return service.docs
+      .map((doc)=> fromMap(doc.id,doc.data()))
+      .toList();
+  }
   //GETID
   //UPDATE
+  Future<void> update(String id, Map<String, dynamic> data) async {
+    await _db.collection(collection).doc(id).update(data);
+  }
   //DELETE
+  Future<void> delete (String id) async{
+    await _db.collection(collection).doc(id).delete();
+  }
 
 /*
   Future<List<FeymanModel>> getFichas() async {

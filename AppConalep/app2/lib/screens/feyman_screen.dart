@@ -29,7 +29,9 @@ class _FeymanScreenState extends State<FeymanScreen> {
 
 
   // Fecha y hora por defecto
+  //fecha
   DateTime selectedDate = DateTime.now();
+  //Hora
   TimeOfDay selectedTime = TimeOfDay.now();
 
 
@@ -68,7 +70,10 @@ class _FeymanScreenState extends State<FeymanScreen> {
       tema: temaController.text, 
       explicacion: explicacionController.text, 
       dudas: dudasController.text, 
-      ejemplos: ejemplosController.text);
+      ejemplos: ejemplosController.text,
+      hora: selectedTime,
+      fecha: selectedDate
+      );
       
       if(validarCampos()){
         await service.post(feyman, feyman.toMap);
@@ -116,16 +121,6 @@ class _FeymanScreenState extends State<FeymanScreen> {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            // Botón superior
-            ButtonWidget(
-              text: "Agregar nueva entrada",
-              onPressed: () {
-                Navigator.of(context).pushNamed('/ejem2');
-                // acción personalizada
-              },
-            ),
-            const SizedBox(height: 20),
-
             // Campos de entrada usando InputField genérico
             TextfieldWidget(label: "Título", controller: tituloController),
             TextfieldWidget(
@@ -168,16 +163,7 @@ class _FeymanScreenState extends State<FeymanScreen> {
               text: "Confirmar entrada",
               onPressed: _post, 
               
-            ),
-
-
-
-
-
-
-
-      
-            
+            ),      
           ],
         ),
       ),
