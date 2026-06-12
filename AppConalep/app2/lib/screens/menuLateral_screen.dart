@@ -44,7 +44,7 @@ class _MenuLateralState extends State<MenuLateralScreen> {
         //     blurRadius: 0.0,
         //   ),
         // ],
-        borderRadius: const BorderRadius.all(Radius.circular(16)),
+        borderRadius:  BorderRadius.all(Radius.circular(16)),
       ),
       drawer: SafeArea(
         child: ListTileTheme(

@@ -1,0 +1,9 @@
+{
+    "@@locale": "es",
+    "dashboard":     "Inicio",
+    "settings":      "Configuración",
+    "options":       "Opciones",
+    "chatbot":       "Chatbot",
+    "subMenu":       "Submenú",
+    "latestVersion": "Versión"
+}
